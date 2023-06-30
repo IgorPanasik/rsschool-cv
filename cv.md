@@ -18,7 +18,7 @@ I am 28 years old and I want to become a successful Frontend student. At the mom
 - __JavaScript(Basic)__
 - __Figma/Photoshop__
 ## Code Examples
-- JavaScript:
+- JavaScript / CodeWars:
 <pre>
   <code>
     function disemvowel(str) {
@@ -41,7 +41,7 @@ I am 28 years old and I want to become a successful Frontend student. At the mom
 2. BELHARD Academy Courses
     - Java Automated Software Testing
 3. Self Education
-    -YouTube, HexLet
+    -YouTube, HexLet, Udemy
 ## Languages
   - Russian - Native Speaker
   - English - B1-B2
