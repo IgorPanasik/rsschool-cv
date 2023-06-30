@@ -6,7 +6,7 @@
 - __Discord__: theManWhoLaughs(@IgorPanasik)
 ## About Me
 I am 28 years old and I want to become a successful Frontend student. At the moment, my goal is to get the necessary skills and knowledge to get my first job in the company. I like to find complex solutions. I will do my best to get as much knowledge as possible on this course.
-- __My Strengths__:
+- __My Strengths__ :
     - _Responsibility_
     - _Teamwork_
     - _Full immersion in the workflow_
@@ -44,4 +44,4 @@ I am 28 years old and I want to become a successful Frontend student. At the mom
     -YouTube, HexLet, Udemy
 ## Languages
   - Russian - Native Speaker
-  - English - B1-B2
+  - English - (B1,B2 level)
