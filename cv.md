@@ -1,6 +1,6 @@
 ## Igor Panasik
 ## My Contact Info
-- __Phone__: +375 (29) 881 68 24
+- __Phone__: +375(29)8816824
 - __E-mail__: panasik.igor.com@gmail.com
 - __GitHub__: IgorPanasik
 - __Discord__: theManWhoLaughs(@IgorPanasik)
