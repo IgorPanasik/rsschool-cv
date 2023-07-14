@@ -342,7 +342,6 @@ ul {
 .contacts__information ul li:not(:first-child) {
   text-transform: lowercase;
 }
-
 /* Contacts end */
 
 .about__text {
