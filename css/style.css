@@ -9,16 +9,21 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   text-transform: capitalize;
   background: #d3d3d3;
-  background-image: linear-gradient(208deg,
-                              hsl(300deg 100% 10%) 2%,
-                              hsl(154deg 16% 52%) 81%,
-                              hsl(150deg 44% 72%) 94%,
-                              hsl(75deg 73% 72%) 99%,
-                              hsl(60deg 100% 50%) 100%);
+  max-width: 1600px;
+
+  margin: 0 auto;
+  background-image: linear-gradient(
+    208deg,
+    hsl(300deg 100% 10%) 2%,
+    hsl(154deg 16% 52%) 81%,
+    hsl(150deg 44% 72%) 94%,
+    hsl(75deg 73% 72%) 99%,
+    hsl(60deg 100% 50%) 100%
+  );
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -113,7 +118,7 @@ ul {
 }
 
 .btn a:hover {
-  color: #1FA2E1;
+  color: #1fa2e1;
   -webkit-transform: translate(8px, 0);
   -moz-transform: translate(8px, 0);
   -o-transform: translate(8px, 0);
@@ -142,11 +147,8 @@ ul {
 /* Base End */
 
 .header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
   padding: 7px;
-  width: 100%;
+  max-width: 100%;
   background: #d1d1d1;
   -webkit-box-shadow: 4px 4px 14px 2px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 4px 4px 14px 2px rgba(0, 0, 0, 0.22);
@@ -157,7 +159,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
 }
 
 .header__nav a {
@@ -174,7 +175,7 @@ ul {
 }
 
 .header__nav a:hover span {
-  color: #1FA2E1;
+  color: #1fa2e1;
 }
 
 .header__nav-img img {
@@ -206,7 +207,7 @@ ul {
   -webkit-transform: translate(2px, 0);
   -moz-transform: translate(2px, 0);
   -o-transform: translate(2px, 0);
-  color: #1FA2E1;
+  color: #1fa2e1;
 }
 
 .header__nav-item a::after {
@@ -230,11 +231,10 @@ ul {
 
 .main {
   position: relative;
-  top: 70px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 52px;
   max-width: 900px;
 }
 
@@ -299,14 +299,25 @@ ul {
   justify-content: center;
 }
 
-.contacts__information {
+.contacts__information ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
+  gap: 10px;
 }
 
-.contacts span {
+.contacts__information li:not(:last-child) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.fa-discord {
+  margin-right: 3px;
+}
+
+.contacts li {
   color: #131313;
 }
 
@@ -321,21 +332,15 @@ ul {
   -webkit-transform: translate(8px, 0);
   -moz-transform: translate(8px, 0);
   -o-transform: translate(8px, 0);
-  color: #1FA2E1;
+  color: #1fa2e1;
 }
 
 .contacts__information i {
   color: #35d482;
 }
 
-.contacts__information span:not(:first-child) {
+.contacts__information ul li:not(:first-child) {
   text-transform: lowercase;
-}
-
-.contacts__information span:not(:last-child) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8.2px;
 }
 
 /* Contacts end */
@@ -409,7 +414,7 @@ ul {
   -webkit-transform: translate(8px, 0);
   -moz-transform: translate(8px, 0);
   -o-transform: translate(8px, 0);
-  color: #1FA2E1;
+  color: #1fa2e1;
 }
 
 /* Works end */
@@ -470,7 +475,7 @@ ul {
   width: 10px !important;
   height: 5px !important;
   border-radius: 8px !important;
-  background: #35d482!important;
+  background: #35d482 !important;
   opacity: 1 !important;
 }
 
@@ -512,7 +517,6 @@ ul {
 .footer span {
   font-size: 13px;
 }
-
 
 .footer__rsshool {
   width: 100px;
@@ -585,8 +589,8 @@ ul {
 
 @media screen and (max-width: 883px) {
   .works__list {
-    justify-content: center;  
-    }
+    justify-content: center;
+  }
 
   .images {
     width: 100%;
@@ -620,10 +624,17 @@ ul {
 }
 
 @media screen and (max-width: 650px) {
- .image__box  {
-  width: 100%;
-  text-align: center;
- }
+  .image__box {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .main__text-paragraph {
+    text-align: center;
+    margin-bottom: -26px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -643,21 +654,21 @@ ul {
     margin-right: -16px !important;
     font-size: 25px !important;
   }
-  
+
   .swiper-button-prev::after {
     margin-left: -16px !important;
     font-size: 25px !important;
   }
-  
+
   .swiper-pagination-bullet {
     margin-bottom: 5px !important;
     width: 12px !important;
     height: 7px !important;
     border-radius: 8px !important;
-    background: #35d482!important;
+    background: #35d482 !important;
     opacity: 1 !important;
   }
-  
+
   .swiper-pagination-bullet-active {
     width: 30px !important;
     background: #ec6452 !important;
@@ -685,7 +696,7 @@ ul {
   }
 
   .works__list {
-  justify-content: left;  
+    justify-content: left;
   }
 
   .images {
