@@ -296,7 +296,6 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .contacts__information ul {
